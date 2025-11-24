@@ -3,22 +3,10 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-    company: 'TechCorp',
-    role: 'Senior Frontend Engineer',
-    duration: '2023 — Present',
-    description: 'Leading UI initiatives, performance, and accessibility across product surfaces.'
-  },
-  {
-    company: 'StartupX',
-    role: 'Frontend Engineer',
-    duration: '2021 — 2023',
-    description: 'Built a design system and accelerated feature delivery with reusable components.'
-  },
-  {
-    company: 'Freelance',
-    role: 'Developer & Designer',
-    duration: '2019 — 2021',
-    description: 'Shipped websites and apps for clients with a focus on UX and motion.'
+    company: 'Trogon Media Pvt Ltd',
+    role: 'React Developer',
+    duration: 'Aug 2025',
+    description: 'Developed Webapplications'
   },
 ]
 
