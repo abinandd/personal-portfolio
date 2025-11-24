@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiTwitter, FiMenu, FiX } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMenu, FiX } from 'react-icons/fi'
+import { SiLeetcode } from "react-icons/si";
+
 
 const navItems = [
   { id: 'home', label: 'Home' },
@@ -22,7 +24,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-gray-900/60 border-b border-white/5">
+    <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-gray-900/60 ">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
@@ -49,7 +51,7 @@ export default function Navbar() {
       <motion.div
         initial={false}
         animate={{ height: open ? 'auto' : 0, opacity: open ? 1 : 0 }}
-        className="md:hidden overflow-hidden border-t border-white/5"
+        className="md:hidden overflow-hidden "
       >
         <div className="px-4 py-3 space-y-2 flex flex-col items-end text-right">
           {navItems.map((item) => (
@@ -62,9 +64,9 @@ export default function Navbar() {
             </button>
           ))}
           <div className="flex items-center gap-5 pt-2 text-xl justify-end w-full">
-            <a className="hover:text-blue-400" href="#" aria-label="GitHub"><FiGithub /></a>
-            <a className="hover:text-blue-400" href="#" aria-label="LinkedIn"><FiLinkedin /></a>
-            <a className="hover:text-blue-400" href="#" aria-label="Twitter"><FiTwitter /></a>
+            <a className="hover:text-blue-400" href="https://github.com/abinandd" aria-label="GitHub"><FiGithub /></a>
+            <a className="hover:text-blue-400" href="https://www.linkedin.com/in/abhinand-c-m-523b92238/" aria-label="LinkedIn"><FiLinkedin /></a>
+            <a className="hover:text-blue-400" href="https://leetcode.com/u/abhinandabhi/" aria-label="Leetcode"><SiLeetcode /></a>
           </div>
         </div>
       </motion.div>
