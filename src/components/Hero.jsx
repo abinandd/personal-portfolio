@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
-import AvatarCircuit from './AvatarCircuit'
+import { FiGithub, FiLinkedin} from 'react-icons/fi'
+// import AvatarCircuit from './AvatarCircuit
+import { SiLeetcode } from 'react-icons/si'
 
 const container = {
   hidden: { opacity: 0, y: 16 },
@@ -62,13 +63,13 @@ export default function Hero() {
             I craft modern, performant web apps with a focus on clean design, accessibility, and motion.
             Passionate about developer experience, animations, and building delightful product UI.
           </p>
-          <p className="mt-3 text-gray-400 text-lg max-w-2xl">
+          {/* <p className="mt-3 text-gray-400 text-lg max-w-2xl">
             Tech I love: React, Tailwind, Framer Motion, Node.js
-          </p>
-          <div className="mt-6 flex items-center gap-4 text-2xl">
-            <a className="hover:text-blue-400" href="#" aria-label="GitHub"><FiGithub /></a>
-            <a className="hover:text-blue-400" href="#" aria-label="LinkedIn"><FiLinkedin /></a>
-            <a className="hover:text-blue-400" href="#" aria-label="Twitter"><FiTwitter /></a>
+          </p> */}
+          <div className="mt-14 flex items-center gap-4 text-2xl">
+            <a className="hover:text-blue-400" href="https://github.com/abinandd" aria-label="GitHub"><FiGithub /></a>
+            <a className="hover:text-blue-400" href="https://www.linkedin.com/in/abhinand-c-m-523b92238/" aria-label="LinkedIn"><FiLinkedin /></a>
+            <a className="hover:text-blue-400" href="https://leetcode.com/u/abhinandabhi/" aria-label="Leetcode"><SiLeetcode /></a>
           </div>
           <div className="mt-8">
             <a href="#projects" className="inline-flex items-center rounded-md bg-blue-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900" data-float>
@@ -76,7 +77,7 @@ export default function Hero() {
             </a>
           </div>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -98,7 +99,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 via-transparent to-transparent" />
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )
