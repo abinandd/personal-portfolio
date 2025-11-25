@@ -1,29 +1,30 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
+import YoutubeImg from "../../src/assets/youtube.png"
+import GemchatImg from "../../src/assets/image.png"
 
 const projects = [
   {
-    title: 'Animated Portfolio',
-    description: 'A sleek portfolio with motion-first interactions built with React and Framer Motion.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1080&auto=format&fit=crop',
-    demo: '#',
-    github: '#',
+    title: 'Youtube Clone',
+    description: 'YouTube clone built with React that uses the YouTube Data API to fetch and display real-time videos. It includes dynamic routing, video playback pages, and an interactive viewing experience.',
+    image: YoutubeImg,
+    demo: 'https://youtube-clone-omega-roan.vercel.app/',
+    github: 'https://github.com/abinandd/youtube-clone',
   },
   {
-    title: 'Design System',
-    description: 'Composable UI kit with Tailwind CSS and Storybook for rapid prototyping.',
-    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1080&auto=format&fit=crop',
-    demo: '#',
-    github: '#',
+    title: 'GemChat Ai',
+    description: 'Chatbot built with Gemini API that processes user prompts and delivers real-time AI responses. It features seamless communication, fast generation, and an intelligent conversational flow.',
+    image: GemchatImg,
+    demo: 'https://realtime-ai-chatbot.vercel.app/',
+    github: 'https://github.com/abinandd/realtime-ai-chatbot',
   },
-  {
-    title: 'Realtime Dashboard',
-    description: 'Metrics dashboard with live updates and accessible charts.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1080&auto=format&fit=crop',
-    demo: '#',
-    github: '#',
-  },
+  // {
+  //   title: 'Realtime Dashboard',
+  //   description: 'Metrics dashboard with live updates and accessible charts.',
+  //   image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1080&auto=format&fit=crop',
+  //   demo: '#',
+  //   github: '#',
+  // },
 ]
 
 export default function Projects() {
