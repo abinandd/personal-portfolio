@@ -6,7 +6,7 @@ const experiences = [
     company: 'Trogon Media Pvt Ltd',
     role: 'React Developer',
     duration: 'Aug 2025',
-    description: 'Developed Webapplications'
+    description: ''
   },
 ]
 
